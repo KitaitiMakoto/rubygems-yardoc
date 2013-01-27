@@ -1,6 +1,5 @@
 require 'rubygems/package'
 require 'rubygems/command'
-require 'shellwords'
 require 'yard'
 
 class Gem::Commands::YardocCommand < Gem::Command

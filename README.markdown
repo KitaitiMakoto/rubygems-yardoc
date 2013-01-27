@@ -38,7 +38,8 @@ Usage
 
     $ gem yardoc GEMNAME [GEMNAME ...]
 
-YARD Documentation for GEMNAME will be generated to `{GEM INSTALATION DIRECTORY}/doc/{GEMNAME}-{VERSION}/yardoc`
+Make `yard` directory into specified gem's doc directory and
+YARD Documentation for the gem will be generated into the directory
 
 Contributing
 ------------

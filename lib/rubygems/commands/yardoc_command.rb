@@ -18,11 +18,10 @@ class Gem::Commands::YardocCommand < Gem::Command
   end
 
   def execute
-    gemnames = get_all_gem_names
-    gemnames.each do |gemname|
-      gemspec = Gem::Specification.find_by_name(gemname)
-      yardoc_dir = File.join(gemspec.doc_dir, 'yardoc')
-      Dir.chdir gemspec.gem_dir do
+    get_all_gem_names.each do |name|
+      spec = Gem::Specification.find_by_name(name)
+      yardoc_dir = File.join(spec.doc_dir, 'yardoc')
+      Dir.chdir spec.gem_dir do
         YARD::CLI::Yardoc.run '--output-dir', yardoc_dir
       end
     end

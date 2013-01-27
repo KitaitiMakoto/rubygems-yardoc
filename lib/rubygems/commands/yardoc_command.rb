@@ -6,7 +6,7 @@ class Gem::Commands::YardocCommand < Gem::Command
   VERSION = '0.0.1'
 
   def initialize
-    super 'yardoc', 'Generate YARD documentations for specified gems'
+    super 'yardoc', 'Generate YARD documentations for specified gems into doc directory'
   end
 
   def arguments # :nodoc:

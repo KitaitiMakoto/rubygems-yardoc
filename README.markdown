@@ -1,7 +1,7 @@
 rubygems-yardoc
 ===============
 
-TODO: Write a gem description
+This gem provides `gem yardoc` command which generate YARD documentation for specified gems.
 
 Installation
 ------------
@@ -21,7 +21,9 @@ Or install it yourself as:
 Usage
 -----
 
-TODO: Write usage instructions here
+    $ gem yardoc GEMNAME [GEMNAME ...]
+
+YARD Documentation for GEMNAME will be generated to `{GEM INSTALATION DIRECTORY}/doc/{GEMNAME}-{VERSION}/yardoc`
 
 Contributing
 ------------

@@ -4,11 +4,11 @@ require 'yard'
 
 class Gem::Commands::YardocCommand < Gem::Command
   def initialize
-    super 'yardoc', 'Generate YARD documentation for specified gems'
+    super 'yardoc', 'Generate YARD documentations for specified gems'
   end
 
   def arguments # :nodoc:
-    'GEMNAME [GEMNAME ...] gem to generate YARD documentation'
+    'GEMNAME [GEMNAME ...]   gem to generate YARD documentation'
   end
 
   def usage # :nodoc:

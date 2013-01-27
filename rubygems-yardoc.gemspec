@@ -7,7 +7,7 @@ Gem::Specification.new do |gem|
   gem.version       = '0.0.1'
   gem.authors       = ["KITAITI Makoto"]
   gem.email         = ["KitaitiMakoto@gmail.com"]
-  gem.description   = %q{Provides gem yardoc command which generate YARD document for specified gems}
+  gem.description   = %q{Provides a "gem yardoc" command which generates YARD documentations for specified gems}
   gem.summary       = %q{gem yardoc command-line tool}
   gem.homepage    = "https://github.com/KitaitiMakoto/rubygems-yardoc"
 

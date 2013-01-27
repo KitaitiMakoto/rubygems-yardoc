@@ -1,7 +1,7 @@
 rubygems-yardoc
 ===============
 
-This gem provides `gem yardoc` command which generate YARD documentation for specified gems.
+This gem provides `gem yardoc` command which generates YARD documentations for specified gems.
 
 Installation
 ------------

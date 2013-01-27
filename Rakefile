@@ -16,3 +16,8 @@ desc "Build and install #{spec.name}-#{spec.version}.gem into system gems."
 task :install do
   Bundler::GemHelper.new.install_gem
 end
+
+desc "Create tag v#{spec.version} and build and push #{spec.name}-#{spec.version}.gem to Rubygems"
+task :release do
+  Bundler::GemHelper.new.release_gem
+end

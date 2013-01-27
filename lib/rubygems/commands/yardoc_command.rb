@@ -3,6 +3,8 @@ require 'rubygems/command'
 require 'yard'
 
 class Gem::Commands::YardocCommand < Gem::Command
+  VERSION = '0.0.1'
+
   def initialize
     super 'yardoc', 'Generate YARD documentations for specified gems'
   end

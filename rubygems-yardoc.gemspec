@@ -1,10 +1,11 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'rubygems/commands/yardoc_command'
 
 Gem::Specification.new do |gem|
   gem.name          = "rubygems-yardoc"
-  gem.version       = '0.0.1'
+  gem.version       = Gem::Commands::YardocCommand::VERSION
   gem.authors       = ["KITAITI Makoto"]
   gem.email         = ["KitaitiMakoto@gmail.com"]
   gem.description   = %q{Provides a "gem yardoc" command which generates YARD documentations for specified gems}

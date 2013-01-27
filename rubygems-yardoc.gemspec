@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["KitaitiMakoto@gmail.com"]
   gem.description   = %q{Provides gem yardoc command which generate YARD document for specified gems}
   gem.summary       = %q{gem yardoc command-line tool}
-  gem.homepage      = ""
+  gem.homepage    = "https://github.com/KitaitiMakoto/rubygems-yardoc"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

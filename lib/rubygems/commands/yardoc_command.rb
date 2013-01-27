@@ -29,5 +29,7 @@ class Gem::Commands::YardocCommand < Gem::Command
     Dir.chdir spec.gem_dir do
       YARD::CLI::Yardoc.run '--output-dir', yardoc_dir
     end
+    $stderr.puts 'YARD documentation is generated in:'
+    $stderr.puts yardoc_dir
   end
 end

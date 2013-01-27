@@ -10,7 +10,7 @@ class Gem::Commands::YardocCommand < Gem::Command
   end
 
   def arguments # :nodoc:
-    'GEMNAME [GEMNAME ...]   gem to generate YARD documentation'
+    'GEMNAME [GEMNAME ...]       gem to generate YARD documentation'
   end
 
   def usage # :nodoc:

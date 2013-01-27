@@ -12,7 +12,7 @@ class Gem::Commands::YardocCommand < Gem::Command
   end
 
   def usage # :nodoc:
-    "gem #{command} #{arguments}"
+    "#{program_name} #{arguments}"
   end
 
   def execute

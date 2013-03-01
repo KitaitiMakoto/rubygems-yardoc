@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |gem|
   gem.name          = "rubygems-yardoc"
-  gem.version       = '0.0.2'
+  gem.version       = '0.0.3'
   gem.authors       = ["KITAITI Makoto"]
   gem.email         = ["KitaitiMakoto@gmail.com"]
   gem.description   = %q{Provides a "gem yardoc" command which generates YARD documentations for specified gems}

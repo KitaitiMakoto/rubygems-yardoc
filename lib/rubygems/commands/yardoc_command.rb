@@ -17,17 +17,18 @@ class Gem::Commands::YardocCommand < Gem::Command
 
   def execute
     get_all_gem_names.each do |name|
-      run_yardoc name
+      self.class.run_yardoc Gem::Specification.find_by_name(name)
     end
   end
 
-  def run_yardoc(gem_name)
-    spec = Gem::Specification.find_by_name(gem_name)
-    yardoc_dir = File.join(spec.doc_dir, 'yardoc')
-    Dir.chdir spec.gem_dir do
-      YARD::CLI::Yardoc.run '--output-dir', yardoc_dir
+  class << self
+    def run_yardoc(spec)
+      yardoc_dir = File.join(spec.doc_dir, 'yardoc')
+      Dir.chdir spec.gem_dir do
+        YARD::CLI::Yardoc.run '--output-dir', yardoc_dir
+      end
+      $stderr.puts 'YARD documentation is generated to:'
+      $stderr.puts yardoc_dir
     end
-    $stderr.puts 'YARD documentation is generated in:'
-    $stderr.puts yardoc_dir
   end
 end

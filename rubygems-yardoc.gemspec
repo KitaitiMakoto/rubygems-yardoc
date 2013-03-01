@@ -10,6 +10,7 @@ Gem::Specification.new do |gem|
   gem.description   = %q{Provides a "gem yardoc" command which generates YARD documentations for specified gems}
   gem.summary       = %q{gem yardoc command-line tool}
   gem.homepage    = "https://github.com/KitaitiMakoto/rubygems-yardoc"
+  gem.license     = 'MIT'
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

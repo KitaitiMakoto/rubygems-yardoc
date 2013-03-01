@@ -6,39 +6,21 @@ This gem provides `gem yardoc` command which generates YARD documentations for s
 Installation
 ------------
 
-Add this line to your application's Gemfile:
-
-    gem 'rubygems-yardoc'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
     $ gem install rubygems-yardoc
 
-Installing `redcarpet` by writing:
-
-    gem 'recarpet'
-
-And executing:
-
-    $ bundle
-
-Or just executing:
+Installing [Redcarpet][1] by:
 
     $ gem install redcarpet
 
 often helps you because many gems use Markdown to write README files
-and YARD require `redcapet` when parsing Markdown.
+and YARD requires Redcarpet when parsing Markdown.
 
 Usage
 -----
 
     $ gem yardoc GEMNAME [GEMNAME ...]
 
-Make `yard` directory into specified gem's doc directory and
+Makes `yardoc` directory into specified gem's doc directory and
 YARD Documentation for the gem will be generated into the directory
 
 Contributing
@@ -49,3 +31,5 @@ Contributing
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+[1]: https://github.com/vmg/redcarpet

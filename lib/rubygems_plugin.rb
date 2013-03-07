@@ -14,6 +14,7 @@ module Gem::InstallUpdateOptions
         options[:document] << 'yardoc'
 
         Gem.post_install do |installer|
+          YARD::Registry.clear
           Gem::Commands::YardocCommand.run_yardoc(installer.spec)
         end
       end

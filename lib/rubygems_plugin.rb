@@ -23,5 +23,5 @@ module Gem::InstallUpdateOptions
 end
 
 Gem.pre_uninstall do |uninstaller|
-  FileUtils.rm_r File.join(uninstaller.spec.doc_dir, 'yardoc')
+  FileUtils.rm_rf File.join(uninstaller.spec.doc_dir, 'yardoc')
 end

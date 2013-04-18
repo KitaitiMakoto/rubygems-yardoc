@@ -9,7 +9,7 @@ module Gem::InstallUpdateOptions
   def add_install_update_options
     install_update_options_without_yardoc
 
-    add_option 'Install/Update', '--yardoc', 'Generate YARD documentation for installed gems' do |value, option|
+    add_option :'Install/Update', '--yardoc', 'Generate YARD documentation for installed gems' do |value, option|
       unless options[:document].include? 'yardoc'
         options[:document] << 'yardoc'
 

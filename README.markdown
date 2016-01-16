@@ -8,13 +8,6 @@ Installation
 
     $ gem install rubygems-yardoc
 
-Installing [Redcarpet][1] by:
-
-    $ gem install redcarpet
-
-often helps you because many gems use Markdown to write README files
-and YARD requires Redcarpet when parsing Markdown.
-
 Usage
 -----
 

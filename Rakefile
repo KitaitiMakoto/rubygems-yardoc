@@ -1,5 +1,6 @@
 require 'rake/clean'
-require 'bundler/gem_tasks'
+require 'rubygems/tasks'
 require 'yard'
 
+Gem::Tasks.new
 YARD::Rake::YardocTask.new

@@ -16,7 +16,7 @@ Usage
 Makes `yardoc` directory into specified gem's doc directory and
 YARD Documentation for the gem will be generated into the directory.
 
-And this gem add `--yardoc` option to `gem install` command
+And this gem add `--document=[ri,rdoc,]yardoc` option to `gem install` command
 which install YARD documentation.
 
 Contributing

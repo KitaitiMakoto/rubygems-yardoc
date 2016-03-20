@@ -23,7 +23,7 @@ class Gem::Commands::YardocCommand < Gem::Command
 
   class << self
     def run_yardoc(spec)
-      yardoc_dir = File.join(spec.doc_dir, 'yardoc')
+      yardoc_dir = spec.doc_dir('yardoc')
       Dir.chdir spec.gem_dir do
         YARD::CLI::Yardoc.run '--output-dir', yardoc_dir
       end

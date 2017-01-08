@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["KitaitiMakoto@gmail.com"]
   gem.description   = %q{Provides a "gem yardoc" command which generates YARD documentations for specified gems}
   gem.summary       = %q{gem yardoc command-line tool}
-  gem.homepage    = "https://github.com/KitaitiMakoto/rubygems-yardoc"
+  gem.homepage    = "https://gitlab.com/KitaitiMakoto/rubygems-yardoc"
   gem.license     = 'MIT'
 
   gem.files         = `git ls-files`.split($/)

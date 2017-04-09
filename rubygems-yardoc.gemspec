@@ -17,7 +17,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.add_runtime_dependency 'yard', '>= 0.8.0', '< 1.0.0'
+  gem.add_runtime_dependency 'yard', '>= 0.9.1', '< 1.0.0'
 
   gem.add_development_dependency 'rubygems-tasks'
   gem.add_development_dependency 'rake'
